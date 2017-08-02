@@ -5,9 +5,8 @@ def dictionary_tuple():
         "Michael": "(999) 999-9999",
         "Jay": "(777) 777-7777"
     }
-    dict_tuple = ()
-    for key, data in my_dict.iteritems():
-        dict_tuple += (key, data)
-    print dict_tuple
+    list = []
+    list.append(tuple(my_dict.items()))
+    return list 
 
-dictionary_tuple()
+print dictionary_tuple()
